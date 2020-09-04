@@ -16,7 +16,7 @@ const Lista = ()=>{
                     uSelector.map((item, i)=>(
                         <li>
                             {
-                                item.name
+                                item.Nombre
                             }
                         </li>
                     ))

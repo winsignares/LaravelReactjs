@@ -23,10 +23,10 @@ export default ControllercitasReducer;
 //Acciones
 export const ObtenerListaCitasAccion = () => async (dispatch, getState)=>{
     try {
-        const respuesta = await axion.get('https://pokeapi.co/api/v2/pokemon?offset=0&limit=20')
+        const respuesta = await axion.get('api/GetServicios')
         dispatch({
             type: GET_LISTA_SUCCESS,
-            payload: respuesta.data.results
+            payload: respuesta.data.result
         })
     } catch (error) {
         console.log(error);

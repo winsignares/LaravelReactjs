@@ -85854,7 +85854,7 @@ var Lista = function Lista() {
       return uDispatch(Object(_redux_Citas_CitasDucks__WEBPACK_IMPORTED_MODULE_2__["ObtenerListaCitasAccion"])());
     }
   }, "obtener Citas"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, uSelector.map(function (item, i) {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, item.name);
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, item.Nombre);
   })));
 };
 
@@ -86166,13 +86166,13 @@ var ObtenerListaCitasAccion = function ObtenerListaCitasAccion() {
             case 0:
               _context.prev = 0;
               _context.next = 3;
-              return axios__WEBPACK_IMPORTED_MODULE_1___default.a.get('https://pokeapi.co/api/v2/pokemon?offset=0&limit=20');
+              return axios__WEBPACK_IMPORTED_MODULE_1___default.a.get('api/GetServicios');
 
             case 3:
               respuesta = _context.sent;
               dispatch({
                 type: GET_LISTA_SUCCESS,
-                payload: respuesta.data.results
+                payload: respuesta.data.result
               });
               _context.next = 10;
               break;
@@ -86245,8 +86245,8 @@ var generateStotrecitas = function generateStotrecitas() {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\Unireformada\Desktop\ProyectoAdsi\Controlcitaodon\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\Unireformada\Desktop\ProyectoAdsi\Controlcitaodon\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\Users\Unireformada\Desktop\ProyectoAdsi\LaravelReactjs\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\Unireformada\Desktop\ProyectoAdsi\LaravelReactjs\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

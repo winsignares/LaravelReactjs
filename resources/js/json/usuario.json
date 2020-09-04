@@ -1,0 +1,19 @@
+{
+    "usuario":[
+        {
+            "Id": 123,
+            "Nobre": "William",
+            "Apellidos": "Insignares"
+        },
+        {
+            "Id":234,
+            "Nombre": "Camilo",
+            "Apellidos": "Barcelo"
+        },
+        {
+            "Id":345,
+            "Nombre": "Cristian",
+            "Apellidos": "Rojanos"
+        }
+    ]
+}

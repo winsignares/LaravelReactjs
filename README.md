@@ -1,3 +1,18 @@
+<p> 
+Favor seguir los siguientes pasos una vez clonado el proyecto
+</p>
+<p> 
+composer install</p>
+<p> 
+cp .env.example .env</p>
+<p> 
+php artisan key:generate</p>
+<p> php artisan serve</p>
+<p> npm install brew install</p>
+<p> nota: para limpiar php artisan config:clear php artisan cache:clear php artisan config:cache
+</p>
+
+
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
 <p align="center">

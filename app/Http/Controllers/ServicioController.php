@@ -20,5 +20,17 @@ class ServicioController extends Controller
        $datos['result'] = Servicio::all();
        return response()->json($datos);
    }
- 
+   
+   public function PutServicios($id,Request $request)
+   {
+       # code...
+       $servi = Servicio::find($id)->update($request);
+       return response()->json($servi);
+   }
+  public function DeleteServicios($id)
+  {
+      # code...
+      $servi = Servicio::find($id)->delete();
+       return response()->json($servi);
+  }
 }

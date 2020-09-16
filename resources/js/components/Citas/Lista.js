@@ -1,10 +1,13 @@
 import React from 'react'
 import { useDispatch, useSelector } from "react-redux";
-import { ObtenerListaCitasAccion } from "../../redux/Citas/CitasDucks";
-
+import { ObtenerListaCitasAccion, GuardarCitasAccion } from "../../redux/Citas/CitasDucks";
+ import Botoneliminarcita from '../../Botones/Botoneliminarcita'
+import { isArguments } from 'lodash';
 const Lista = ()=>{
     const uDispatch = useDispatch()
     const uSelector = useSelector(store =>store.citas.array)
+   
+
     return(
         <div>
             Hola esta es una lista
@@ -14,14 +17,20 @@ const Lista = ()=>{
             <ul>
                 {
                     uSelector.map((item, i)=>(
-                        <li>
+                                             
+                        <li key={i}>
                             {
                                 item.Nombre
                             }
-                        </li>
+                             <div>
+                                 <Botoneliminarcita id={item.id} />
+                             </div>
+                        </li>                           
+                       
                     ))
                 }
             </ul>
+  
         </div>
     )
 }

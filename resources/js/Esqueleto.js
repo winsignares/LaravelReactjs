@@ -5,18 +5,21 @@ import Paneluno from './components/Panel/Paneluno';
 import Lista from "./components/Citas/Lista";
 import {Provider} from 'react-redux'
 import generateStotrecitas from  './redux/Citas/Store'
+import Addformcitas from './Formularios/Addformcitas'
 
 const Esquelto = ()=>{
-    const store  = generateStotrecitas()
+    const storeLista  = generateStotrecitas()
     return(
         <div>
             <Navegacion Nombre="William"  />    
             <Paneluno />  
             <div id="bc">
             </div>  
-            <Provider store= {store} >
+            <Provider store= {storeLista} >
                 <Lista />
+                <Addformcitas />
             </Provider> 
+            
             
         </div>
     );
